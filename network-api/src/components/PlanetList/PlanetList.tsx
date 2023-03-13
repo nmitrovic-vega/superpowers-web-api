@@ -30,7 +30,9 @@ const PlanetList = () => {
 		if (open) {
 			timer.current = setInterval(
 				() => {
-					setProgress((prevProgress) => (prevProgress >= 100 ? 100 : prevProgress + Math.floor(Math.random() * 11)));
+					setProgress((prevProgress) =>
+						prevProgress + Math.floor(Math.random() * 11) >= 100 ? 100 : prevProgress + Math.floor(Math.random() * 11)
+					);
 				},
 				isFastNetwork ? 300 : 800
 			);
@@ -48,6 +50,8 @@ const PlanetList = () => {
 	useEffect(() => {
 		if (!isFastNetwork && progress > 40) {
 			setFeedbackMessage("Your reservation is taking longer than expected. Please wait...");
+		} else {
+			setFeedbackMessage("");
 		}
 	}, [isFastNetwork, progress]);
 
