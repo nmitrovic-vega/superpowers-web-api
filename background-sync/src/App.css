@@ -1,61 +1,21 @@
-.section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
 body {
   background-image: url('./assets/images/space-background.png');
-  background-repeat: round;
-}
-
-.astronaut {
-  position: absolute;
-  top: 30px;
-  right: -170px;
-  width: 80px;
-  padding: 15px;
-  border-radius: 50%;
-  background-color: #4d6aff80;
-  opacity: 0.8;
-  margin: 30px;
-}
-
-.title {
-  text-shadow: 0 0 4px #2d337f, 0 0 4px #2d337f, 0 0 4px #2d337f, 0 0 4px #2d337f;
-  background-image: url('./assets/images/trail.png');
-  background-size: cover;
-  background-size: 605px 112px;
+  background-size: auto 100vh;
   background-repeat: no-repeat;
-  padding: 50px;
-  background-position: 0 70px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.rocket-trail {
-  width: 400px;
-  position: absolute;
-  top: 40px;
-  left: 0;
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  margin-left: 50px;
 }
 
-.galaxy {
-  position: absolute;
-  bottom: -20px;
-  right: -40px;
-}
-
-.comets {
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-}
-
-.planets {
-  position: absolute;
-  bottom: 50px;
-  left: 100px;
-  width: 200px;
+.planet-list {
+  background-image: url('./assets/images/space-background2.png');
+  background-size: auto 100vh;
+  min-height: 100vh;
 }

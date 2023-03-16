@@ -62,11 +62,15 @@ const PlanetList = ({ planets }: any) => {
 	const handleClose = () => setOpen(false);
 
 	if (!planets?.length) {
-		return <RocketLoader />;
+		return (
+			<div className="planet-list">
+				<RocketLoader />
+			</div>
+		);
 	}
 
 	return (
-		<>
+		<div className="planet-list">
 			<Grid container spacing={2} style={{ padding: "50px", textAlign: "center" }}>
 				{planets.slice(0, 100).map((planet: any, index: number) => (
 					<Grid key={planet.pl_name} xs={4} item>
@@ -138,7 +142,7 @@ const PlanetList = ({ planets }: any) => {
 					message="Flight reserved!"
 				/>
 			</Snackbar>
-		</>
+		</div>
 	);
 };
 

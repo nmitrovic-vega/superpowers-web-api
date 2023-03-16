@@ -6,10 +6,6 @@ import { theme } from "./theme/theme";
 import PlanetList from "./components/PlanetList/PlanetList";
 import astronaut from "./assets/images/astronaut.png";
 import RocketLogo from "./components/RocketLogo/RocketLogo";
-import RocketTrail from "./assets/images/rocket-trail2.png";
-import Galaxy from "./assets/images/galaxy.png";
-import Comets from "./assets/images/comets.png";
-import Planets from "./assets/images/planets.png";
 import "./App.css";
 
 function App() {
@@ -56,7 +52,6 @@ function App() {
 							<div className="section">
 								<Typography variant="h1" className="title" style={{ position: "relative", color: "white" }}>
 									Svemirko.rs
-									<img src={astronaut} className="astronaut" alt="astronaut" />
 								</Typography>
 								<Link
 									to="rocket"
@@ -76,17 +71,13 @@ function App() {
 											margin: "auto",
 											color: "white",
 											textDecoration: "none",
-											borderRadius: "10px",
+											borderRadius: "10rem",
 											padding: "15px 20px",
 										}}
 									>
-										RESERVE A FLIGHT
+										EXPLORE
 									</Button>
 								</Link>
-								<img src={RocketTrail} alt="rocket-trail" className="rocket-trail" />
-								{/* <img src={Galaxy} alt="galaxy" className="galaxy" /> */}
-								<img src={Comets} alt="comets" className="comets" />
-								<img src={Planets} alt="planets" className="planets" />
 							</div>
 						}
 					/>

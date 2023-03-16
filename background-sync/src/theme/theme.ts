@@ -13,7 +13,7 @@ export const theme = createTheme({
 	},
 	typography: {
 		allVariants: {
-			fontFamily: "'Poppins', sans-serif",
+			fontFamily: "'Cabin Sketch', sans-serif",
 			textTransform: "none",
 		},
 	},
