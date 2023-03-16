@@ -52,7 +52,6 @@ function App() {
 							<div className="section">
 								<Typography variant="h1" className="title" style={{ position: "relative", color: "white" }}>
 									Svemirko.rs
-									<img src={astronaut} className="astronaut" alt="astronaut" />
 								</Typography>
 								<Link
 									to="rocket"
@@ -72,7 +71,7 @@ function App() {
 											margin: "auto",
 											color: "white",
 											textDecoration: "none",
-											borderRadius: "10px",
+											borderRadius: "10rem",
 											padding: "15px 20px",
 										}}
 									>

@@ -67,7 +67,7 @@ const PlanetList = () => {
 	const handleClose = () => setOpen(false);
 
 	return (
-		<>
+		<div className="planet-list">
 			<Grid container spacing={2} style={{ padding: "50px", textAlign: "center" }}>
 				{planets.slice(0, 100).map((planet: any, index: number) => (
 					<Grid key={planet.pl_name} xs={4} item>
@@ -139,7 +139,7 @@ const PlanetList = () => {
 					message="Flight reserved!"
 				/>
 			</Snackbar>
-		</>
+		</div>
 	);
 };
 
