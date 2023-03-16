@@ -1,0 +1,73 @@
+.space {
+  background-image: url('./assets/space-background.jpg');
+  height: 140vh;
+}
+
+.empty {
+  height: 110vh;
+}
+
+.astronaut {
+  width: 130px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #7946fe57;
+  margin: 40px;
+}
+
+.astronaut-wrapper {
+  position: relative;
+}
+
+.astronaut-salute {
+  position: absolute;
+  top: -140px;
+  left: 240px;
+}
+
+.astronaut-salute p {
+  background-color: #7946fe57;
+  padding: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.astronaut-salute__circle {
+  background-color: #7946fe57;
+  border-radius: 50%;
+  animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.astronaut-salute__circle--small {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  padding: 13px;
+}
+
+.astronaut-salute__circle--medium {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 17px;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  10% {
+      opacity: 0.5;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
