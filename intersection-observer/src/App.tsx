@@ -15,7 +15,7 @@ function App() {
 					<div className="astronaut-salute">
 						<div className="astronaut-salute__circle astronaut-salute__circle--small"></div>
 						<div className="astronaut-salute__circle astronaut-salute__circle--medium"></div>
-						<p>Zdravo svete!</p>
+						<p>Hallo Wereld!</p>
 					</div>
 				)}
 				<img src={astronaut} className="astronaut" alt="astronaut" ref={astronautRef} />
